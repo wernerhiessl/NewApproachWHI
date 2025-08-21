@@ -6,6 +6,7 @@ Target file (append-only): `inputs/scope-log.md`
 - Always append; never rewrite or delete.
 - One fact per line.
 - Business-level facts only; no technical details.
+- May reference a note via [ref:KEY].
 
 ## Exact line format
 ```

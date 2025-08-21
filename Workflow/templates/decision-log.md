@@ -6,6 +6,7 @@ Target file (append-only): `inputs/decision-log.md`
 - Always append; never rewrite or delete.
 - One decision per line.
 - Business-level outcome only; no technical details.
+- May reference a note via [ref:KEY].
 
 ## Exact line format
 ```

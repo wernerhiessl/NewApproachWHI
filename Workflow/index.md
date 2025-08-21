@@ -6,7 +6,7 @@ This repository uses a two‑mode workflow with minimal files:
 
 Active folders:
 - `Workflow/` – this index, per‑mode guides, and lightweight templates
-- `inputs/` – timestamped scope notes and `decision-log.md`
+- `inputs/` – `.md` sources per templates (e.g., input, scope-log, decision-log, notes)
 
 ## Startup and switching
 - If no mode is specified at start, default to Review Mode without asking.
@@ -14,7 +14,8 @@ Active folders:
 
 ## File I/O and determinism
 - Persisted outputs are in English.
-- Do not modify existing inputs unless appending decisions.
+- Only append to `inputs/decision-log.md` and `inputs/scope-log.md`; never overwrite.
+- On explicit "Create Output" in Review Mode, write `concepts/<YYYYMMDD-HHMMSS>-Phase1.md` using `Workflow/templates/create-output.md`.
 - Follow repository file‑operations policy (no shell I/O).
 - Be deterministic: concise phrasing, stable headings, fixed behaviors.
 
@@ -23,9 +24,11 @@ Active folders:
 - Load exactly one mode:
   - Scoping: `Workflow/modes/scoping.md`
   - Review: `Workflow/modes/review.md`
-- Templates loaded on demand (identical approach for both logs):
+- Templates loaded on demand:
   - Decision log format: `Workflow/templates/decision-log.md`
   - Scope log format: `Workflow/templates/scope-log.md`
+  - Create Output spec: `Workflow/templates/create-output.md`
+  - Notes format: `Workflow/templates/notes.md`
 
 ## Structure summary
 - `Workflow/modes/scoping.md` – Scoping behavior
