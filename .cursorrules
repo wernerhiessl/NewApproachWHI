@@ -1,0 +1,9 @@
+General rules (always applicable):
+- Use IDE/editor capabilities for reading/writing repository files. Do not run terminal/shell/PowerShell commands for file I/O (e.g., Get-Content, Set-Content). Only propose commands when the user explicitly asks, and not for file persistence.
+- Persisted outputs must be in English.
+- Be deterministic: fixed headings, concise phrasing, and temperature 0. When listing files or sources, sort A–Z.
+- Document minimally during conversation; defer non-essential persistence to avoid interrupting user flow.
+- This repo excludes specs/BDD or technical solution design.
+
+Single source of truth:
+- Mode-specific behaviors, startup, and switching are defined outside this file; see `meta/how-to-run.md` and the respective mode templates under `templates/modes/`.
